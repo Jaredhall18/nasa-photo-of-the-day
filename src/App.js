@@ -13,6 +13,7 @@ import Footer from './components/Footer'
     axios.get(`${BASE_URL}?api_key=${API_KEY}`)
       .then(res => {
         setNasaApod(res.data)
+        console.log(res.data)
       }).catch(err => console.error(err));
   }, [])
   
@@ -20,10 +21,8 @@ import Footer from './components/Footer'
   return (
     <div className="App">
       <Header />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <Cards nasaApod={nasaApod}/>
+      <Footer />
     </div>
   );
 }
