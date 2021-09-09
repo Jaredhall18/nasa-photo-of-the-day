@@ -4,6 +4,9 @@ import styled from 'styled-components'
 const StyledDetails = styled.div`
     background-color: ${pr => pr.theme.tertiaryColor};
     padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 
     h5 {
         color: ${pr => pr.theme.primaryColor}
