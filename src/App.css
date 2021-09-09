@@ -29,7 +29,11 @@
 }
 
 .dailyImg {
-  display:block
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 70vh; */
 }
 
 @keyframes App-logo-spin {

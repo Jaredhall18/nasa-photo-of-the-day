@@ -1,10 +1,20 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const StyledDetails = styled.div`
+    background-color: ${pr => pr.theme.tertiaryColor};
+    padding-top: 30px;
+
+    h1 {
+        color: ${pr => pr.theme.primaryColor}
+    }
+`
 
 const Header = () => {
     return (
-        <div>
+        <StyledDetails>
             <h1>Nasa Astronomy Photo Of The Day</h1>
-        </div>
+        </StyledDetails>
     )
 }
 

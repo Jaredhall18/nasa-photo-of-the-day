@@ -5,6 +5,14 @@ import {BASE_URL, API_KEY} from './constants'
 import Header from './components/Header'
 import Cards from './components/Cards'
 import Footer from './components/Footer'
+import theme from './theme';
+import styled from 'styled-components'
+
+import { ThemeProvider } from 'styled-components';
+ 
+const BackgroundColor = styled.div`
+background-color: ${pr => pr.theme.tertiaryColor};
+`
 
  function App() {
   const [nasaApod, setNasaApod] = useState([])
@@ -20,9 +28,11 @@ import Footer from './components/Footer'
 
   return (
     <div className="App">
-      <Header />
-      <Cards nasaApod={nasaApod}/>
-      <Footer />
+      <BackgroundColor>
+        <Header />
+        <Cards nasaApod={nasaApod}/>
+        <Footer />
+      </BackgroundColor>
     </div>
   );
 }
