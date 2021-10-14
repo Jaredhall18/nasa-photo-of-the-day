@@ -8,7 +8,7 @@ const StyledDetails = styled.div`
     text-align: center;
 
     h2, h3, p {
-        color: ${pr => pr.theme.white};
+        color: #eaac8b;
     }
 
     img {
