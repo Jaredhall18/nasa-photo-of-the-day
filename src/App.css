@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.dailyImg {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 70vh; */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
